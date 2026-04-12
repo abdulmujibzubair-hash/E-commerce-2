@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>Sweet & Time</h2>
+    <h2>Shop</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="aboutus.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="search-bar">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search cakes or watches..."
+        onkeyup="searchProducts()"
+    >
+</div>
+
+<div class="filter-buttons">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('cake')">Cakes</button>
+    <button onclick="filterProducts('watch')">Watches</button>
+</div>
+
+<section class="products">
+
+    <div class="product" data-category="cake">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+        <h3>Chocolate Cake</h3>
+        <p>₦10,000</p>
+        <button onclick="addToCart('Chocolate Cake',10000)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="cake">
+        <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713">
+        <h3>Vanilla Cake</h3>
+        <p>₦8,000</p>
+        <button onclick="addToCart('Vanilla Cake',8000)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="watch">
+        <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49">
+        <h3>Casual Watch</h3>
+        <p>₦12,000</p>
+        <button onclick="addToCart('Casual Watch',12000)">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="watch">
+        <img src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be">
+        <h3>Luxury Watch</h3>
+        <p>₦25,000</p>
+        <button onclick="addToCart('Luxury Watch',25000)">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
