@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - Sweet & Time</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>My Cart</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="aboutus.html">About</a>
+        <a href="contact.html">Contact</a>  
+    </nav>
+</header>
+
+<div class="cart-wrapper">
+
+    <!-- CART ITEMS -->
+    <div class="cart-items">
+        <h3>Cart Items</h3>
+        <ul id="cartItems"></ul>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="cart-summary">
+        <h3>Order Summary</h3>
+        <p id="total">Total: ₦0</p>
+
+        <div class="order-form">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="address" placeholder="Delivery Address">
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <button onclick="checkout()" class="btn">Checkout via WhatsApp</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
