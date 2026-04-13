@@ -31,9 +31,12 @@
         <p id="total">Total: ₦0</p>
 
         <div class="order-form">
-            <input type="text" id="name" placeholder="Full Name">
-            <input type="text" id="address" placeholder="Delivery Address">
-            <input type="text" id="phone" placeholder="Phone Number">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Delivery Address" required>
+            <input type="text" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="time" placeholder="Preferred Delivery Time" required>
+            <input type="text" id="payment" placeholder="Payment Method (e.g. Cash on Delivery)" required>
+            <textarea name="Any Special Messages" id="" placeholder="Any special instructions for your order?" required></textarea>
 
             <button onclick="checkout()" class="btn">Checkout via WhatsApp</button>
         </div>
